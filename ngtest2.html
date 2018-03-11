@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/javascript; charset=utf-8" />
+    <title>Angular Third Example</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <!-- <script src='main.js'></script> -->
+    <script>
+       angular.module('myApp', []).
+       controller('NameCtrl', function($scope) {
+          $scope.firstName = 'John';
+          $scope.lastName = 'Doe';
+       });
+   </script>
+</head>
+<body ng-controller="NameCtrl">
+    First Name: <input ng-model="firstName" type="text" />
+    <br />
+
+    Last Name: <input ng-model="lastName" type="text" />
+    <br />
+
+    Hello {{firstName}} {{lastName}}
+    
+        
+    </body>
+    </html>
